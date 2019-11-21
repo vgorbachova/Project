@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".NewBlockActivity">
+
+    <EditText
+        android:id="@+id/etBlockName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Block name"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/createText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I want to create:" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/btCardBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="card block" />
+
+        <CheckBox
+            android:id="@+id/btTextBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="text block" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/testUse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I want to use:" />
+
+    <CheckBox
+        android:id="@+id/btPimsleur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pimsleur`s method" />
+
+    <CheckBox
+        android:id="@+id/btEbbinghaus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ebbinghaus` method" />
+
+    <TextView
+        android:id="@+id/textUse2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I want to use: " />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/btOldFolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="old folder" />
+
+        <CheckBox
+            android:id="@+id/btNewFolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="new folder" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btGetBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+</LinearLayout>
