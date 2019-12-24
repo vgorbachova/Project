@@ -26,8 +26,6 @@ public class FolderActivity extends AppCompatActivity {
 
     ImageButton btAddNew;
 
-    Button dlDB;
-
     Dialog_CreateFolder createFolder;
     Dialog_RenameFolder rename ;
 
@@ -70,14 +68,6 @@ public class FolderActivity extends AppCompatActivity {
         MyAdapter adapter = new MyAdapter();
         rv.setAdapter(adapter);
         rv.setLayoutManager(new LinearLayoutManager(this));
-
-        dlDB = (Button) findViewById(R.id.dlDB);
-        dlDB.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                database.delete(DBFoldersHelper.TABLE_FOLDERS, null, null);
-            }
-        });
 
     }
 

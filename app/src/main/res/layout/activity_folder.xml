@@ -24,18 +24,6 @@
         android:layout_height="5dp"
         android:layout_weight="1">
 
-        <Button
-            android:id="@+id/dlDB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Delete DB" />
-
-        <LinearLayout
-            android:layout_width="184dp"
-            android:layout_height="45dp"
-            android:layout_weight="0.1"
-            android:orientation="horizontal"></LinearLayout>
-
         <ImageButton
             android:id="@+id/btAddNew"
             android:layout_width="wrap_content"
