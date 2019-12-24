@@ -4,43 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical"
-    tools:context=".FolderActivity">
+    tools:context=".NewBlockActivity">
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="428dp"
+        android:layout_height="617dp"
         android:layout_weight="1">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv"
+            android:id="@+id/rvBlock"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
-
     </FrameLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="5dp"
-        android:layout_weight="1">
-
-        <Button
-            android:id="@+id/dlDB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Delete DB" />
+        android:layout_height="99dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="184dp"
+            android:layout_width="265dp"
             android:layout_height="45dp"
             android:layout_weight="0.1"
-            android:orientation="horizontal"></LinearLayout>
+            android:orientation="horizontal">
+
+        </LinearLayout>
 
         <ImageButton
-            android:id="@+id/btAddNew"
+            android:id="@+id/btAddNewBlock"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.1"
+            android:layout_weight="1"
             app:srcCompat="@android:drawable/ic_menu_add" />
 
     </LinearLayout>

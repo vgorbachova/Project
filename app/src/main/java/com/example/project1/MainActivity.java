@@ -9,26 +9,15 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btNewBlocks, btOldBlocks;
-
-    public final int BACK2 = 0;
+    Button btOldBlocks;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btNewBlocks = (Button) findViewById(R.id.btNewBlocks);
-        btOldBlocks = (Button) findViewById(R.id.btOldBlocks);
-        btNewBlocks.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), NewBlockActivity.class);
-                intent.putExtra("getBack", BACK2);
-                startActivity (intent);
-            }
-        });
+        btOldBlocks = (Button) findViewById(R.id.btOldBlocks);
         btOldBlocks.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -37,5 +26,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity (intent);
             }
         });
+        startService(new Intent(this, MyService.class));
     }
 }
